@@ -334,7 +334,7 @@ function saveSetup() {
   localStorage.setItem('fl_sb_url', url);
   localStorage.setItem('fl_sb_key', key);
   localStorage.setItem('fl_anth_key', anth);
-  hide('setupOverlay');
+  document.getElementById('setupOverlay').classList.remove('visible');
   initSB(url, key);
   showAuth();
 }
