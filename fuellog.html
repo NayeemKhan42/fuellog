@@ -305,9 +305,8 @@ async function boot() {
   const key = localStorage.getItem('fl_sb_key');
   const anth = localStorage.getItem('fl_anth_key');
   if (!url || !key || !anth) {
-    hide('loadingOverlay'); 
-    
-    document.getElementById('setupOverlay').classList.add('visible');
+    document.getElementById('loadingOverlay').style.display = 'none';
+    document.getElementById('setupOverlay').style.display = 'flex';
     return;
 
   }
